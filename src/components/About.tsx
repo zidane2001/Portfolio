@@ -26,17 +26,17 @@ function About() {
     return (
         // centrer about sur le vertical et horizontal
 
-        <div className=" flex flex-col items-center justify-center p-10 md:mb-32 bg-base-300" >
+        <div className=" flex flex-col items-center  px-20 md:px-0 gap-10 justify-center py-10  bg-base-300" >
 
             <Title title="About Me" />
-            <div className="flex justify-center align-center text-md text-center md:h-screen ">
-                <div className="flex hidden md:flex md:w-full flex-col  mx-4 rounded-lg md:pl-[10%] shadow-lg">
-                    <img src={img} alt="Maphoto" className="flex w-150 max-w-full h-96 object-cover rounded-xl" />
+            <div className="flex justify-center align-center lg:w-2/3 text-md text-center md:h-screen ">
+                <div className="flex hidden justify-center  md:flex md:w-full flex-col rounded-lg   ">
+                    <img src={img} alt="Maphoto" className="flex  h-[80%] object-cover  shadow-fit rounded-xl" />
                 </div>
-                <div className="flex md:ml-4 flex-col  space-y-4">
+                <div className="flex md:ml-4 flex-col justify-center lg:w-4/5 space-y-4 ">
                     {
                         aboutSections.map((section) => (
-                            <div key={section.id} className="flex flex-col p-4  gap-4 md:w-full items-center items-left bg-base-100 ">
+                            <div key={section.id} className="flex flex-col p-4  gap-4 md:w-full items-center items-left bg-base-100 rounded-lg shadow-lg md:flex-row md:items-center hover:bg-gray-700 transition-colors duration-300">
                                 <div className="mb-2 md:mb-0">
                                     {section.icon}
                                     
@@ -44,7 +44,7 @@ function About() {
                                
                                 <div className="md:ml-4 text-center md:text-left">
                                     <h2 className="text-xl font-bold mb-1 ">{section.title}</h2>
-                                    <p className="text-gray-600 mt-2">{section.description}</p> 
+                                    <p className="text-white-200 mt-2">{section.description}</p> 
                                 </div>
                             </div>
                         ))

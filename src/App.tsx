@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
+import Experiences from './components/Experiences'
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <Home />
       </div>
       <About />
-
+      <div className='py-25 md:px-[15%]'>
+       <Experiences />
+      </div>
     </div>
 
   )
