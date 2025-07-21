@@ -105,8 +105,8 @@ function Expriences() {
     return (
         <div className=" flex flex-col items-center px-20 md:px-0 gap-10 justify-center py-10 ">
             <Title title="My Experiences" />
-            <div className="flex gap-4 flex-col md:flex-row justify-center items-center w-full">
-                <div className="flex flex-wrap gap-4 text-center p-4 justify-center items-center mt-4 md:w-1/3 md:mt-0 ">
+            <div className="flex gap-4 flex-col-reverse md:flex-row justify-center items-center w-full">
+                <div className="flex flex-wrap  gap-4 text-center p-4 justify-center items-center mt-4 md:w-1/3 md:mt-0 ">
                     {skills.map((skill) => (
                         <div key={skill.id} className="">
                             <div className=" w-24 h-24 p-2 md:mb-0 rounded-full border-2 border-accent">
@@ -137,15 +137,17 @@ function Expriences() {
                                     </div>
 
                                 </div>
-                                <div><ul>
+                                <div>
+                                    <ul className="list-disc px-15">
                                     {
                                         experience.description.map((description, index) => (
-                                            <li key={index} className="text-white-200 px-15 mt-2">
+                                            <li key={index} className="text-white-200  mt-2">
                                                 {description}
                                             </li>
                                         ))
                                     }
-                                </ul></div>
+                                    </ul>
+                                </div>
 
                             </div>
 
