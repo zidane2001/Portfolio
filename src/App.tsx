@@ -20,9 +20,9 @@ function App() {
       <div className='p-5 md:px-[10%]'>
         <Projects />
       </div>
-      <div>
+     
         <Footer />
-      </div>
+  
     </div>
 
 
